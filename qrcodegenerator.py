@@ -11,4 +11,6 @@ def generate_qrcode(text):
     img = qr.make_image(fill_color = "black",back_color = "white")
     img.save("qrimg001.png")
 
-generate_qrcode("youtube.com")
+url = input("input the url you want: ")
+generate_qrcode(url)
+
